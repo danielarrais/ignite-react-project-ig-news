@@ -1,5 +1,6 @@
 import styles from './styles.module.scss';
 import Image from 'next/image'
+import { SingInButton } from '../SinginButton';
 
 export const Header = () => {
   return (
@@ -10,6 +11,8 @@ export const Header = () => {
           <a className={styles.active} href="">Home</a>
           <a href="">Posts</a>
         </nav>
+
+        <SingInButton />
       </div>
     </header>
   )
