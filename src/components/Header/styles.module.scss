@@ -36,11 +36,11 @@
 
       &.active {
         font-weight: bold;
-        color: var(--white)
+        color: var(--white);
       }
 
       &.active::after {
-        content: '';
+        content: "";
         height: 3px;
         border-radius: 3px 3px 0 0;
         width: 100%;
@@ -50,5 +50,9 @@
         background: var(--yellow-500);
       }
     }
+  }
+
+  button {
+    margin-left: auto;
   }
 }
