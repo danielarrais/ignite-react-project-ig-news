@@ -7,9 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "slicemachine": "start-slicemachine"
+    "slicemachine": "start-slicemachine",
+    "dev:faunadb:apply": "yarn run env-cmd -f ./.env.local yarn fauna-schema-migrate apply",
+    "dev:faunadb:state": "yarn run env-cmd -f ./.env.local yarn fauna-schema-migrate state",
+    "dev:faunadb:generate": "yarn run env-cmd -f ./.env.local yarn fauna-schema-migrate generate"
   },
   "dependencies": {
+    "@fauna-labs/fauna-schema-migrate": "^2.2.1",
     "@prismicio/client": "^6.6.4",
     "@prismicio/helpers": "^2.3.3",
     "@prismicio/react": "^2.4.4",
@@ -19,6 +23,7 @@
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.39",
     "axios": "^0.27.2",
+    "env-cmd": "^10.1.0",
     "faunadb": "^4.6.0",
     "next": "12.1.0",
     "next-auth": "^4.10.0",
