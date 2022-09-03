@@ -1,0 +1,5 @@
+CreateCollection({
+  "name": "subscriptions",
+  "history_days": null,
+  "ttl_days": null
+})

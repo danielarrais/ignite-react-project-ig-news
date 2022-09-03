@@ -1,0 +1,9 @@
+CreateIndex({
+  "name": "subscription_by_status",
+  "unique": true,
+  "serialized": true,
+  "source": Collection("subscriptions"),
+  "terms": [{
+    "field": ["data", "status"]
+  }]
+})

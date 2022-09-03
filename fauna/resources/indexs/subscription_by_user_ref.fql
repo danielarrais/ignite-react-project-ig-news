@@ -1,0 +1,11 @@
+CreateIndex({
+  name: "subscription_by_user_ref",
+  unique: true,
+  serialized: true,
+  source: Collection("subscriptions"),
+  terms: [
+    {
+      field: ["data", "user_id"]
+    }
+  ]
+})

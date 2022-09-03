@@ -1,0 +1,9 @@
+CreateIndex({
+  "name": "user_by_customer_id",
+  "unique": true,
+  "serialized": true,
+  "source": Collection("users"),
+  "terms": [{
+    "field": ["data", "stripe_customer_id"]
+  }]
+})
