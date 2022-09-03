@@ -55,5 +55,14 @@ PRISMIC_ACCESS_TOKEN=
 ## Migrate collections and indexs on faunadb
 After **create env file** and run **yarn install** run **yarn dev:faunadb:apply** for create collections and index on faunadb from the migrations located on ./fauna/migrations (for more details about it see [@fauna-labs/fauna-schema-migrate](https://www.npmjs.com/package/@fauna-labs/fauna-schema-migrate));
 
+## Configure Prismic Slice Machine
+To configure Prismic just run steps below:
+
+1. Run **npx @slicemachine/init** on terminal;
+2. Do sing-in on prismic;
+3. Inform a repository name for the project;
+4. Access http://localhost:9999/cts/post and publish the 'Post' custom type;
+5. Access prismic and create an access token to PRISMIC_ACCESS_TOKEN environment variable;
+
 # Run application
 For run the ignews  just run **yarn dev**
